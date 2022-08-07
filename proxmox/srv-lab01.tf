@@ -1,7 +1,7 @@
 resource "proxmox_vm_qemu" "TF001" {
     name = "TF001"
     desc = "LAB Terraform"
-    mvmid = "200"
+    vmmid = "200"
     target_node = "proxmox"
 
     agent = 1
@@ -10,7 +10,7 @@ resource "proxmox_vm_qemu" "TF001" {
     cores = 2
     sockets = 1
     cpu = "Default"
-    mememory = 1024
+    memory = 1024
 
     network {
       bridge = "vmbr0"
