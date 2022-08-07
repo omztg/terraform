@@ -1,7 +1,7 @@
 resource "proxmox_vm_qemu" "TF001" {
     name = "TF001"
     desc = "LAB Terraform"
-    vmmid = "200"
+    vmid = "200"
     target_node = "proxmox"
 
     agent = 1
